@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #ff3c78;
+}
+
+.password-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.password-box input {
+    width: 70%;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #ff3c78;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.password-box button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #ff3c78;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.password-box button:hover {
+    background-color: #ff2c66;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+input[type="number"] {
+    width: 50px;
+    margin-left: 10px;
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 15px;
+    }
+
+    .password-box input {
+        font-size: 16px;
+    }
+
+    .password-box button {
+        font-size: 14px;
+    }
+}

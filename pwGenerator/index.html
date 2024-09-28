@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="container animate__heartBeat">
+        <h1>Password Generator</h1>
+        <div class="password-box ">
+            <input type="text" id="password" readonly>
+            <button onclick="generatePassword()">Generate</button>
+        </div>
+        <div class="options">
+            <label>
+                Length:
+                <input type="number" id="length" value="12" min="4" max="20">
+            </label>
+            <label>
+                <input type="checkbox" id="uppercase"> Include Uppercase
+            </label>
+            <label>
+                <input type="checkbox" id="numbers"> Include Numbers
+            </label>
+            <label>
+                <input type="checkbox" id="symbols"> Include Symbols
+            </label>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
